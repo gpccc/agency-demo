@@ -209,13 +209,12 @@ class IndexPage extends Component {
         <section style={{ position: "relative" }}>
           <Banner parallax></Banner>
           <FormFive>
-            <form name="contact" method="post" data-netlify="true">
+            <form name="contact" method="post" action="/thanks/" data-netlify="true" onSubmit={this.handleSubmit}>
               <div className="fields">
                 <GenericH2 none>Contact Us</GenericH2>
-                <input type="text" name="name" id="name" placeholder="Name" />
-                <input type="email" name="email" id="email" placeholder="Email" />
-                <textarea name="message" id="message" placeholder="Message" rows="7">
-                </textarea>
+                <input type="text" name="name" id="name" placeholder="Name" vale={name} onChange={this.handleChange} />
+                <input type="email" name="email" id="email" placeholder="Email" value={email} onChange={this.handleChange} />
+                <textarea name="message" id="message" placeholder="Message" rows="7" value={message} onChange={this.handleChange}></textarea>
                 <div className="actions">
                   <input type="submit" value="Send Message" className="button__primary" />
                 </div>
