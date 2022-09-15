@@ -28,6 +28,21 @@ const TextWrapper = styled.div`
     align-items: center;
     flex-direction: column;
   }
+  a {
+    background-color: #ed4933;
+    box-shadow: none;
+    color: #ffffff;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.225em;
+    padding: 1.8rem 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 `
 
 const MoreText = styled.div`
@@ -278,16 +293,16 @@ export {
   Banner,
   TextWrapper,
   MoreText,
+  Header,
+  Works,
   SectionTwo,
   SectionThree,
   SectionFour,
+  FormFive,
+  Footer,
   FlexBoxIndex,
   GenericPara,
-  GenericParaAbout,
   GenericH2,
   GenericH3,
-  FormFive,
-  Header,
-  Footer,
-  Works,
+  GenericParaAbout,
 }
